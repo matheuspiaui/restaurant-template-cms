@@ -13,3 +13,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Foo", name: "foo", widget: "foo"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "drinks"
+    label: "Drinks Item"
+    folder: "site/content/drinks"
+    create: true
+    fields: 
+      - {label: "Nome do Drink", name: "title", widget: "string"}
+      - {label: "Drink Marker", name: "title", widget: "hidden", default: ["drinks"]}
+      - {label: "Ingredientes/Descrição", name: "description", widget: "text"}
+      - {label: "Tipo de Drink", name: "type", widget: "string", default: "beer"}
+      - {label: "Preço", name: "price", widget: "string"}
+
+
